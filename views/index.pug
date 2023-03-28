@@ -1,0 +1,30 @@
+doctype html 
+html 
+    head 
+        title Kreditní karty 
+        link(rel='stylesheet' href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css')
+    body
+        header.bg-dark.p-3 
+            h1.text-center.text-white #{nadpis} 
+        main.container 
+            table(class="table table-striped") 
+                thead 
+                    tr.bg-dark.text-light 
+                        th Jméno na kartě
+                        th Číslo kreditní karty 
+                        th Datum expirace 
+                        th CVC 
+                tbody 
+                    each ukol in ukoly 
+                        tr 
+                            td #{ukol.ukol} 
+                            td #{ukol.cisloKreditKarty} 
+                            td #{ukol.DatumExpirace} 
+                            td #{ukol.cvc} 
+        footer.bg-dark.p-2 
+            div.container.text-white 
+                p.float-right 
+                    a(href="/") Zpět na formulář 
+                p &copy; Stuchlík Adam - IT2 
+        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js') 
+        script(src='https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js')

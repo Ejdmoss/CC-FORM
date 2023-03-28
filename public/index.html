@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <title>Kreditní Karty</title>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <main>
+        <div class="containerek">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2 class="nadpis3">Kreditní karty</h2>
+                    <form action="/savedata" method="POST">
+                        <div class="form-group row">
+                            <label for="ukol" class="col-sm-2 col-form-label">Jméno na kartě</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="ukol" id="ukol"
+                                    placeholder="Honza Marmeládek" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cisloKreditKarty" class="col-sm-2 col-form-label">Číslo kreditní karty</label>
+                            <div class="col-sm-10">
+                                <input type="tel" inputmode="numeric" pattern="[0-9\s]{19,19}" autocomplete="cc-number" maxlength="19" class="form-control" name="cisloKreditKarty" id="cisloKreditKarty"
+                                    placeholder="7258 6848 1356 1577" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="DatumExpirace" class="col-sm-2 col-form-label">Datum expirace</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" maxlength="5" name="DatumExpirace" id="DatumExpirace"
+                                    placeholder="02/25" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cvc" class="col-sm-2 col-form-label">CVC</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" maxlength="3" name="cvc" id="cvc" placeholder="625" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-sm-2 col-sm-10">
+                                <button type="submit" class="btn1">Poslat</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
